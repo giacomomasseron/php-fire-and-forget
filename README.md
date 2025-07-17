@@ -8,14 +8,10 @@
 Execute fire and forget requests.
 
 It handles:
-- Get
-- Post
-- Put
-- Delete
+- Get, Post ,Put ,Delete requests
 - Custom headers
 - Bearer token authentication
 
-requests.
 
 ## Installation
 
