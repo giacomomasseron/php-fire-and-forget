@@ -21,7 +21,11 @@ class Curl extends AbstractDriver implements DriverInterface
             throw new MethodNotAllowed($method, static::class);
         }
 
-        exec("curl {$this->addBearerToken()} {$this->addHeaders()} {$this->addParamsToUrl($url, $parameters)} > /dev/null 2>&1 &");
+        exec(
+            "curl {$this->addBearerToken()} 
+            {$this->addHeaders()} 
+            {$this->addParamsToUrl($url, $parameters)} > /dev/null 2>&1 &"
+        );
     }
 
     /**

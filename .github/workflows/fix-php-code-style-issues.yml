@@ -24,6 +24,7 @@ jobs:
         with:
           php_version: 8.3
           path: src/
+          standard: .php-cs-fixer.php
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v6
