@@ -24,7 +24,6 @@ jobs:
         with:
           php_version: 8.3
           path: src/
-          standard: phpcs.xml
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v6
