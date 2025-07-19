@@ -19,12 +19,8 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
-      - name: PHP Code Sniffer
-        uses: php-actions/phpcs@v1
-        with:
-          php_version: 8.3
-          path: src/
-          standard: .php-cs-fixer.php
+      - name: Fix Style
+        run: ./vendor/bin/php-cs-fixer fix src
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v6
