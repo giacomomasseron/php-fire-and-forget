@@ -8,7 +8,7 @@
 Execute fire and forget requests.
 
 It handles:
-- Get, Post ,Put ,Delete requests
+- Get, Post, Put, Delete requests
 - Custom headers
 - Bearer token authentication
 
