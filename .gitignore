@@ -19,6 +19,7 @@ _ide_helper.php
 _ide_helper_models.php
 .phpstorm.meta.php
 .php-cs-fixer.cache
+.php-cs-fixer.php
 
 # Editors
 /.idea

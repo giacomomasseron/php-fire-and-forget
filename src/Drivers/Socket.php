@@ -6,7 +6,6 @@ use Exception;
 use GiacomoMasseroni\FireAndForget\Contracts\DriverInterface;
 use GiacomoMasseroni\FireAndForget\Enums\MethodEnum;
 use GiacomoMasseroni\FireAndForget\Exceptions\NoSocket;
-use GiacomoMasseroni\FireAndForget\Logger;
 
 class Socket extends AbstractDriver implements DriverInterface
 {

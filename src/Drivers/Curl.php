@@ -4,7 +4,6 @@ namespace GiacomoMasseroni\FireAndForget\Drivers;
 
 use GiacomoMasseroni\FireAndForget\Contracts\DriverInterface;
 use GiacomoMasseroni\FireAndForget\Enums\MethodEnum;
-use GiacomoMasseroni\FireAndForget\Exceptions\FireAndForgetException;
 use GiacomoMasseroni\FireAndForget\Exceptions\MethodNotAllowed;
 
 class Curl extends AbstractDriver implements DriverInterface

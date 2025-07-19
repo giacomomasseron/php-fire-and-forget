@@ -43,9 +43,7 @@ final class FireAndForget
      * Singleton's constructor should not be public. However, it can't be
      * private either if we want to allow subclassing.
      */
-    protected function __construct()
-    {
-    }
+    protected function __construct() {}
 
     /**
      * The method you use to get the Singleton's instance.
