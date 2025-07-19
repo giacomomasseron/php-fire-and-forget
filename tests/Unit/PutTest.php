@@ -15,7 +15,6 @@ it('slow api', function () {
 
 it('slow api with bearer token', function () {
     $before = microtime(true);
-
     FireAndForget::withBearerToken('bearer_token')->put('https://fakeresponder.com/?sleep=5000');
 
     $after = microtime(true);
