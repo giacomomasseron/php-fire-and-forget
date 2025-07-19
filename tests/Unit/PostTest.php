@@ -6,7 +6,9 @@ use GiacomoMasseroni\FireAndForget\FireAndForget;
 
 it('slow api', function () {
     $before = microtime(true);
+
     FireAndForget::post('https://fakeresponder.com/?sleep=5000');
+
     $after = microtime(true);
 
     $this->assertTrue(($after - $before) < 1, 'The request should not block the execution');
