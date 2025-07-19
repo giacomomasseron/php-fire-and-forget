@@ -36,7 +36,6 @@
         "analyse": "vendor/bin/phpstan analyse",
         "test-coverage": "vendor/bin/pest --coverage",
         "format": "php-cs-fixer fix src",
-        "lint": "pint",
         "refactor": "rector",
         "test:lint": "php-cs-fixer check src",
         "test:refactor": "rector --dry-run",

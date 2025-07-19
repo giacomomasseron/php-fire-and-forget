@@ -19,8 +19,12 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
 
-      - name: Fix PHP code style issues
-        uses: aglipanci/laravel-pint-action@2.5
+      - name: PHP Code Sniffer
+        uses: php-actions/phpcs@v1
+        with:
+          php_version: 8.1
+          path: src/
+          standard: phpcs.xml
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v6
