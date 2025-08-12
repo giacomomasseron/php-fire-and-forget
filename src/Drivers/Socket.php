@@ -17,10 +17,21 @@ class Socket extends AbstractDriver implements DriverInterface
      */
     public function send(MethodEnum $method, string $url, ?array $parameters = null): void
     {
+        /**
+         * @var array{
+         *     scheme: string,
+         *     host: string,
+         *     port?: int|null,
+         *     path: string,
+         *     query: string,
+         *     fragment?: string|null
+         * } $parts
+         */
         $parts = parse_url($url);
 
         try {
             $parts['port'] = $parts['port'] ?? $parts['scheme'] === 'https' ? 443 : 80;
+            /** @var resource $socket */
             $socket = $this->openSocket($this->socketScheme($parts['scheme']) . '://' . $parts['host'], $parts['port']);
         } catch (Exception $e) {
             throw new NoSocket('Error during open socket: ' . $e->getMessage());
