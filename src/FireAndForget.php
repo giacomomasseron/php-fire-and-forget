@@ -14,8 +14,8 @@ use GiacomoMasseroni\FireAndForget\Exceptions\FireAndForgetException;
  * @method static FireAndForget withBearerToken(string $token)
  * @method static FireAndForget driver(DriverEnum $driver)
  * @method static void get(string $ur, ?DriverEnum $driver = null)
- * @method static void post(string $url, ?string[] $parameters, ?DriverEnum $driver = null)
- * @method static void put(string $url, ?string[] $parameters, ?DriverEnum $driver = null)
+ * @method static void post(string $url, ?string[] $parameters = null, ?DriverEnum $driver = null)
+ * @method static void put(string $url, ?string[] $parameters = null, ?DriverEnum $driver = null)
  * @method static void delete(string $url, ?DriverEnum $driver = null)
  */
 final class FireAndForget
